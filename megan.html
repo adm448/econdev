@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title> Internet Access, GDP Growth, and Labor Force Participation </title>
+	<link href="styles/vis3_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -18,6 +19,17 @@
 <p> In terms of data visualization, we plan to construct an interactive scatterplot similar to the Gapminder model, which tracks life expectancy, GDP, and population for each country between 1800 and 2008. We will plot GDP per capita on the x-axis and labor force participation on the y-axis. Bubble size will represent the percentage of the population using the internet, and bubble color will represent the region for each country. <a href="http://romsson.github.io/dragit/example/nations.html"> Example linked here</a> </p>
 
 <a href="index.html"> Home Page </a>
+
+<div id="chart" style="margin:0px"></div>
+<span id="min-time">1800</span> 
+<input type="range" name="points" min="0" max="208" step="1" value="0" id="slider-time" style="width:900px">
+<span id="max-time">2008</span>
+
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://rawgit.com/romsson/dragit/master/src/dragit.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+<script src="scripts/vis3_script.js"></script>
 
 </body>
 </html>
