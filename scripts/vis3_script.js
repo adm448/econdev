@@ -63,7 +63,7 @@ var countrylabel = svg.append("text")
     .text(" ");
 var first_time = true;
 // Load the data.
-d3.json("../data/nations.json", function(nations) {
+d3.json("https://rawgit.com/romsson/dragit/master/data/nations.json", function(nations) {
   // A bisector since many nation's data is sparsely-defined.
   var bisect = d3.bisector(function(d) { return d[0]; });
   // Add a dot per nation. Initialize the data at 1800, and set the colors.
