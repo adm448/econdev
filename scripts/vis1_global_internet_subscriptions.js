@@ -5,7 +5,7 @@ var format = function(d) {
 
 var map = d3.geomap.choropleth()
     .geofile('/data/countries.json')
-    .colors(colorbrewer.YlGnBu[9])
+    .colors(colorbrewer.Blues[9])
     .column('2016')
     .format(format)
     .legend(true)
