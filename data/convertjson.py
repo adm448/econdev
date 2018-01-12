@@ -9,16 +9,18 @@ def convert(json_data):
 		country_dict['year'] = int(country_dict['year'])
 		country_dict['gdp_per_cap'] = float(country_dict['gdp_per_cap'])
 		country_dict['internet_pct'] = float(country_dict['internet_pct'])
+		country_dict['population'] = float(country_dict['population'])
 		# first, you need to check if that country is already in your output dict
 		# if so, you append just the new internet and income values. If not, you need to create a new entry
 		for dicti in output:
 			if dicti['name'] == country_dict['country']:
 				dicti['income'].append([country_dict['year'], country_dict['gdp_per_cap']])
 				dicti['internet'].append([country_dict['year'],country_dict['internet_pct']])
+				dicti['population'].append([country_dict['year'],country_dict['population']])
 				updated = True
 		if not updated:
-				output.append({'name': country_dict['country'], 'income':[[country_dict['year'],country_dict['gdp_per_cap']]],
-					'internet':[[country_dict['year'],country_dict['internet_pct']]]})                       
+				output.append({'name': country_dict['country'],'region':country_dict['region'],'income':[[country_dict['year'],country_dict['gdp_per_cap']]],
+					'internet':[[country_dict['year'],country_dict['internet_pct']]],'population':[[country_dict['year'],country_dict['population']]]})                       
 	return output
 
 # read in original json
