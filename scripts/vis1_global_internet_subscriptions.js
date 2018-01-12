@@ -1,6 +1,6 @@
 var format = function(d) {
     d = d;
-    return d3.format(',.02f')(d) + 'per 100';
+    return d3.format(',.02f')(d) + ' per 100 habitants';
 }
 
 var map = d3.geomap.choropleth()
