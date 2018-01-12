@@ -1,0 +1,28 @@
+html {
+	background-color: blue;
+}
+
+p {
+	color: black;
+	text-align: center;
+}
+
+body {
+	background-color: white;
+	width: 1200px;
+	margin: 0 auto;
+	border: 5px solid black;
+	padding: 20px 20px 20px 20px;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	color: black;
+}
+
+#sources {
+	text-align: left;
+}
