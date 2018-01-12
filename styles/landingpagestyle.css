@@ -1,0 +1,68 @@
+/* BASIC LAYOUT */
+
+
+html {
+  font-size: 18px; 
+  font-family: "Lato";
+  color: black;
+}
+
+body {
+  width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 0 50px 50px 20px;
+  border: 2px solid rgb(211,211,211);
+}
+
+h1 {
+  color: #2f4f4f;
+  font-size: 35px; 
+  text-align: center;
+  font-family: "Lato"; 
+  margin: 30px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; ;
+}
+
+h2 {
+  color: #4d8080;
+  font-size: 20px;
+  text-align: center; 
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h3 {
+  color: #609f9f;
+  font-size: 20px;
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+/* NAVIGATION BAR  */
+
+div.scrollmenu {
+    position: fixed;
+    top: 0%; 
+    left: 0; 
+    width: 100em; 
+    background-color: #333;
+    overflow: auto;
+    font-family: "Lato"; 
+    font-size: 15px; 
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
