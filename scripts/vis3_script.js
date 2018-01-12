@@ -1,6 +1,6 @@
 // Various accessors that specify the four dimensions of data to visualize.
 function x(d) { return d.income; }
-function y(d) { return d.lifeExpectancy; }
+function y(d) { return d.internet; }
 function radius(d) { return d.population; }
 function color(d) { return d.region; }
 function key(d) { return d.name; }
@@ -9,8 +9,8 @@ var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
     width = 960 - margin.right,
     height = 500 - margin.top - margin.bottom;
 // Various scales. These domains make assumptions of data, naturally.
-var xScale = d3.scale.log().domain([300, 1e5]).range([0, width]),
-    yScale = d3.scale.linear().domain([10, 85]).range([height, 0]),
+var xScale = d3.scale.log().domain([100, 1e5]).range([0, width]),
+    yScale = d3.scale.linear().domain([-30, 100]).range([height, 0]),
     radiusScale = d3.scale.sqrt().domain([0, 5e8]).range([0, 40]),
     colorScale = d3.scale.category10();
 // The x & y axes.
@@ -38,7 +38,7 @@ svg.append("text")
     .attr("text-anchor", "end")
     .attr("x", width)
     .attr("y", height - 6)
-    .text("income per capita, inflation-adjusted (dollars)");
+    .text("income per capita, constant 2010 dollars");
 // Add a y-axis label.
 svg.append("text")
     .attr("class", "y label")
@@ -46,14 +46,14 @@ svg.append("text")
     .attr("y", 6)
     .attr("dy", ".75em")
     .attr("transform", "rotate(-90)")
-    .text("life expectancy (years)");
+    .text("percent of individuals accessing the internet");
 // Add the year label; the value is set on transition.
 var label = svg.append("text")
     .attr("class", "year label")
     .attr("text-anchor", "end")
     .attr("y", height - 24)
     .attr("x", width)
-    .text(1800);
+    .text(2000);
 // Add the country label; the value is set on transition.
 var countrylabel = svg.append("text")
     .attr("class", "country label")
@@ -63,14 +63,14 @@ var countrylabel = svg.append("text")
     .text(" ");
 var first_time = true;
 // Load the data.
-d3.json("https://rawgit.com/romsson/dragit/master/data/nations.json", function(nations) {
+d3.json("data/converted_internet_gdp.json", function(nations) {
   // A bisector since many nation's data is sparsely-defined.
   var bisect = d3.bisector(function(d) { return d[0]; });
-  // Add a dot per nation. Initialize the data at 1800, and set the colors.
+  // Add a dot per nation. Initialize the data at 2000, and set the colors.
   var dot = svg.append("g")
       .attr("class", "dots")
     .selectAll(".dot")
-      .data(interpolateData(1800))
+      .data(interpolateData(2000))
     .enter().append("circle")
       .attr("class", "dot")
       .style("fill", function(d) { return colorScale(color(d)); })
@@ -134,7 +134,7 @@ d3.json("https://rawgit.com/romsson/dragit/master/data/nations.json", function(n
         region: d.region,
         income: interpolateValues(d.income, year),
         population: interpolateValues(d.population, year),
-        lifeExpectancy: interpolateValues(d.lifeExpectancy, year)
+        internet: interpolateValues(d.internet, year)
       };
     });
   }
@@ -158,9 +158,9 @@ d3.json("https://rawgit.com/romsson/dragit/master/data/nations.json", function(n
   }
   function init() {
     dragit.init(".gRoot");
-    dragit.time = {min:1800, max:2009, step:1, current:1800}
+    dragit.time = {min:2000, max:2016, step:1, current:2016}
     dragit.data = d3.range(nations.length).map(function() { return Array(); })
-    for(var yy = 1800; yy<2009; yy++) {
+    for(var yy = 2000; yy<2017; yy++) {
       interpolateData(yy).filter(function(d, i) { 
         dragit.data[i][yy-dragit.time.min] = [xScale(x(d)), yScale(y(d))];
       })
@@ -189,7 +189,7 @@ function clear_demo() {
   }
 }
 function play_demo() {
-  var ex_nations = ["China", "India", "Indonesia", "Italy", "France", "Spain", "Germany", "United States"]
+  var ex_nations = ["China", "India", "Indonesia", "Italy", "France", "Spain", "Germany", "United States","Uzbekistan"]
   var index_random_nation = null;
   var random_index = Math.floor(Math.random() * ex_nations.length);
   var random_nation = nations.filter(function(d, i) { 
