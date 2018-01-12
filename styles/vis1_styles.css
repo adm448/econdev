@@ -4,15 +4,15 @@ html {
 
 p {
 	color: black;
-	width: 500px;
+	text-align: center;
 }
 
 body {
-	background-color: #FF9500;
-	width: 600px;
+	background-color: white;
+	width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px 20px 20px;
 	border: 5px solid black;
+	padding: 20px 20px 20px 20px;
 }
 
 h1 {
@@ -20,6 +20,5 @@ h1 {
 	text-align: center;
 	margin: 0;
 	padding: 20px 0;
-	color: #00539F;
-	text-shadow: 3px 3px 1px black;
+	color: black;
 }
