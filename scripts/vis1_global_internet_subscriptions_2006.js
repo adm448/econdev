@@ -9,7 +9,9 @@ var map2k6 = d3.geomap.choropleth()
     .column('2006')
     .format(format)
     .legend(true)
-    .unitId('Country Code');
+    .unitId('Country Code')
+    .width(800)
+    .height(600);
 
 d3.csv('data/Fixed_broadband_2000-2016_with_country_codes.csv', function(error, data) {
     d3.select('#map2006')
