@@ -11,8 +11,9 @@ var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
 // Various scales. These domains make assumptions of data, naturally.
 var xScale = d3.scale.log().domain([100, 1e5]).range([0, width]),
     yScale = d3.scale.linear().domain([-30, 100]).range([height, 0]),
-    radiusScale = d3.scale.sqrt().domain([0, 5e8]).range([0, 40]),
-    colorScale = d3.scale.category10();
+    radiusScale = d3.scale.sqrt().domain([0, 5e8]).range([0, 30]),
+    colorScale = d3.scale.ordinal().range(["#ff4444", "#ffbb33", "#00C851", "#33b5e5", "#0d47a1", "#aa66cc"]);
+
 // The x & y axes.
 var xAxis = d3.svg.axis().orient("bottom").scale(xScale).ticks(12, d3.format(",d")),
     yAxis = d3.svg.axis().scale(yScale).orient("left");
@@ -158,9 +159,9 @@ d3.json("data/converted_internet_gdp.json", function(nations) {
   }
   function init() {
     dragit.init(".gRoot");
-    dragit.time = {min:2000, max:2016, step:1, current:2016}
+    dragit.time = {min:1999, max:2016, step:1, current:2016}
     dragit.data = d3.range(nations.length).map(function() { return Array(); })
-    for(var yy = 2000; yy<2017; yy++) {
+    for(var yy = 1999; yy<2017; yy++) {
       interpolateData(yy).filter(function(d, i) { 
         dragit.data[i][yy-dragit.time.min] = [xScale(x(d)), yScale(y(d))];
       })
