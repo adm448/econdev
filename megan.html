@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Internet Access, GDP Growth, and Labor Force Participation </title>
+	<title> Internet Access and GDP </title>
 	<link href="styles/meganstyles.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
 	<link href="styles/vis3_style.css" rel="stylesheet" type="text/css">
@@ -14,19 +14,13 @@
   <a href="megan.html">GDP and Access</a>
 </div>
 
-<h1> Internet Access, GDP Growth, and Labor Force Participation </h1>
+<h1> Global Internet Access and GDP </h1>
 <h2> 2000-2016 </h2>
 
-<p> We'll examine two datasets. </p>
-
-<ul>
-	<li> <b> The International Telecommunications Union </b> provides data on the percentage of each country's population using the internet for every year between 2000 and 2016. <a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx"> Data linked here</a></li>
-	<li> <b> The World Bank </b> tracks a laundry list of economic indicators for every country in the world, dating back as far as 1960. The two indicators of interest in our study will be labor force participation rate for ages 15+ and GDP per capita in constant 2010 USD. <a href="http://databank.worldbank.org/data/reports.aspx?source=world-development-indicators"> Data linked here</a></li>
-</ul>
-
-<p> In terms of data visualization, we plan to construct an interactive scatterplot similar to the Gapminder model, which tracks life expectancy, GDP, and population for each country between 1800 and 2008. We will plot GDP per capita on the x-axis and labor force participation on the y-axis. Bubble size will represent the percentage of the population using the internet, and bubble color will represent the region for each country. <a href="http://romsson.github.io/dragit/example/nations.html"> Example linked here</a> </p>
-
-
+<br>
+<h3 class="chart-title">Internet access has become increasingly prevalent in middle-income countries.</h3>
+<h4>But the lowest-income nations, especially those in Sub-Saharan Africa, continue to lag behind.</h4>
+<p class="chart-instructions"><i>Click and drag the slider bar or any bubble to see the indicators change over time</i></p>
 <div id="chart" style="margin:0px"></div>
 <span id="min-time">2000</span> 
 <input type="range" name="points" min="0" max="17" step="1" value="0" id="slider-time" style="width:705px">
@@ -40,6 +34,20 @@
     <li><span class="south-asia"></span> South Asia</li>
     <li><span class="east-asia-and-the-pacific"></span> East Asia and the Pacific</li>
     <li>*Bubble size represents population size for given year</li>
+</ul>
+<br>
+<p>Here we have attempted to demonstrate the relationship between GDP per capita and the percent people accessing the Internet for each country. A few observations jump out:</p>
+<ul>
+	<li>In 2000, only countries with the highest GDP per capita saw significant numbers accessing the Internet; these countries were concentrated in Europe and North America, and included a few high-GDP nations of East Asia and the Pacific (e.g., Japan, Australia, New Zealand, South Korea, and Singapore)
+
+<p class="data-links">Original data:</p>
+<ul class="data-links">
+	<li><a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx"> The International Telecommunications Union Internet Access indicators</a></li>
+	<li><a href="http://databank.worldbank.org/data/reports.aspx?source=world-development-indicators"> The World Bank's worldwide economic indicator dataset</a></li>
+</ul>
+<p class="data-links">Original visualization:</p>
+<ul class="data-links">
+<li>Romain Vuillemot's <a href="http://romsson.github.io/dragit/example/nations.html">re-recreation</a> of the GapMinder visualization</li>
 </ul>
 
 
