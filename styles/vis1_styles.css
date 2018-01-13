@@ -26,3 +26,30 @@ h1 {
 #sources {
 	text-align: left;
 }
+
+/* NAVIGATION BAR  */
+
+div.scrollmenu {
+    position: fixed;
+    top: 0%; 
+    left: 0; 
+    width: 100em; 
+    background-color: #333;
+    overflow: auto;
+    font-family: "Lato"; 
+    font-size: 15px; 
+    white-space: nowrap;
+    opacity: .9;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
