@@ -9,10 +9,10 @@ p {
 
 body {
 	background-color: white;
-	width: 1200px;
-	margin: 0 auto;
-	border: 5px solid black;
-	padding: 20px 20px 20px 20px;
+	width: 800px;
+	margin: 50px auto;
+	border: 2px solid rgb(211,211,211);
+	padding: 0px 50px 50px 20px;
 }
 
 h1 {
