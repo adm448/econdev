@@ -73,7 +73,6 @@ hr {
 
 div.scrollmenu {
     position: fixed;
-    text-align: center;
     top: 0%; 
     left: 0; 
     width: 100em; 
@@ -88,7 +87,6 @@ div.scrollmenu {
 div.scrollmenu a {
     display: inline-block;
     color: white;
-    text-align: center;
     padding: 20px;
     text-decoration: none;
 }
