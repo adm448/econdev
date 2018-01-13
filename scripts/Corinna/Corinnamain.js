@@ -63,8 +63,8 @@ var path = d3.geoPath().projection(projection);
 svg.call(tip);
 
 queue()
-    .defer(d3.json, "data/world_countries.json")
-    .defer(d3.tsv, "data/Internet_Access_by_Gender.txt")
+    .defer(d3.json, "data/Corinna/world_countries.json")
+    .defer(d3.tsv, "data/Corinna/Internet_Access_by_Gender.txt")
     .await(ready);
 
 function ready(error, data, population) {
