@@ -1,6 +1,7 @@
 /* BASIC LAYOUT */
 
 html {
+  background-color: #609f9f; 
   font-size: 18px; 
   font-family: "Lato";
   color: black;
@@ -25,7 +26,7 @@ h1 {
 
 h2 {
   color: #4d8080;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center; 
   font-family: "Lato";
   margin: 10px 0px 0px 0px; 
@@ -42,8 +43,8 @@ h3 {
 
 h4 {
   color: rgb(128,128,128);
-  font-size: 15px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-family: "Lato:100";
   margin: 10px 0px 0px 0px; 
   padding: 0px 0px 0px 0px; 
 }
@@ -51,7 +52,7 @@ h4 {
 h5 {
   color: rgb(128,128,128);
   font-size: 13px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Lato:100";
   margin: 10px 0px 0px 0px; 
   padding: 0px 0px 0px 0px; 
 }
@@ -78,6 +79,7 @@ div.scrollmenu {
     font-family: "Lato"; 
     font-size: 15px; 
     white-space: nowrap;
+    opacity: 0.9;
 }
 
 div.scrollmenu a {
