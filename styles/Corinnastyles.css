@@ -1,9 +1,9 @@
 /* BASIC LAYOUT */
 
 html {
-  background-color: #609f9f; 
   font-size: 18px; 
   font-family: "Lato";
+  background-color: #80b3b3; 
   color: black;
 }
 
@@ -99,7 +99,13 @@ div.scrollmenu a:hover {
 
 Add D3 map */
 
-div.gender-divide-map .names {
+#gender-divide-map {
+  font-size: 10px;
+  font-family:"avenir next", Arial, sans-serif;
+  color: rgb(0,0,300);
+}
+
+#gender-divide-map .names {
   fill: none;
   stroke: #fff;
   stroke-linejoin: round;
@@ -178,10 +184,9 @@ div.gender-divide-map .names {
 
 /* Add legend (different source to main graph)*/ 
 
-.legend {
-    font-size: 10px;
-    font-family: "Lato";
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: rgb(128,128,128);
+#legendid .legend {
+  font-size: 10px;
+  font-family:"avenir next", Arial, sans-serif;
+  color: rgb(0,0,250);
    
    }
