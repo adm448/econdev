@@ -49,7 +49,6 @@ var path = d3.geoPath();
 var svg = d3.select("body")
             .append("svg")
             .attr("width", width)
-            .attr ("class", "chart")
             .attr ("id", "gender-divide-map")
             .attr("height", height)
             .append('g')
@@ -138,21 +137,23 @@ function ready(error, data, population) {
 var legend = svg.selectAll("g.legend")
 .data(ext_color_domain)
 .enter().append("g")
-.attr("class", "legend")
-.attr ("id", "legendid");
+.attr("class", "chart")
+.attr ("id", "legendid")
 
 var ls_w = 20, ls_h = 20;
-
 
 legend.append("rect")
 .attr("x", 20)
 .attr("y", function(d, i){ return height - (i*ls_h) - 2*ls_h;})
 .attr("width", ls_w)
 .attr("height", ls_h)
+.attr ("id", "legendid")
 .style("fill", function(d, i) { return legend_color(d); })
 .style("opacity", 0.8);
 
+
 legend.append("text")
+.attr ("id", "legendid")
 .attr("x", 50)
 .attr("y", function(d, i){ return height - (i*ls_h) - ls_h - 4;})
 .text(function(d, i){ return legend_labels[i]; });
