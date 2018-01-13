@@ -1,6 +1,5 @@
 /* BASIC LAYOUT */
 
-
 html {
   font-size: 18px; 
   font-family: "Lato";
@@ -41,6 +40,31 @@ h3 {
   padding: 0px 0px 0px 0px; 
 }
 
+h4 {
+  color: rgb(128,128,128);
+  font-size: 15px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h5 {
+  color: rgb(128,128,128);
+  font-size: 13px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(232,232,232);
+    margin: 1em 0;
+    padding: 0;
+}
+
 
 /* NAVIGATION BAR  */
 
@@ -73,7 +97,7 @@ div.scrollmenu a:hover {
 
 Add D3 map */
 
-#gender-divide-map .names {
+div.gender-divide-map .names {
   fill: none;
   stroke: #fff;
   stroke-linejoin: round;
@@ -150,11 +174,12 @@ Add D3 map */
       color:white;
     }
 
-/* Add legend */ 
+/* Add legend (different source to main graph)*/ 
 
-   .legend {
-    font-size: 8px;
+.legend {
+    font-size: 10px;
     font-family: "Lato";
-    color: red;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(128,128,128);
    
    }

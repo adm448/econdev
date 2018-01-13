@@ -34,10 +34,15 @@ var margin = {top: 0, right: 20, bottom: 0, left: 120},
 
 // Colours for countries and thresholds 
 var legend_labels = ["Gap geater than -15%pt","-10 to -15%pt gap","-5 to -10%pt gap","-2 to -5%pt gap","0 to -2% gap","0 to +2% (no gap)","+2 to +5% (no gap)","+5 to +10% (no gap)","Greater than +10% (no gap)"]
-var ext_color_domain = [-15,-10,-5,-2,0,2,5,10,15]
+var ext_color_domain = [-10,-5,-2,0,2,5,10]
+var legend_color = d3.scaleThreshold()
+  .domain(ext_color_domain)
+  .range(["rgb(0,0,300)","rgb(139,0,0)","rgb(255,50,0)", "rgb(255,129,0)", "rgb(255,159,0)", "rgb(255,195,77)","rgb(177,221,161)","rgb(102,141,60)","rgb(0,300,0)"]);
+
+
 var color = d3.scaleThreshold()
   .domain([-15,-10,-5,-2,0,2,5,10])
-  .range(["rgb(300,0,0", "rgb(255,43,0)", "rgb(255,129,0)", "rgb(255,159,0)", "rgb(255,195,77)","rgb(177,221,161)","rgb(102,141,60)","rgb (50,200,0)","rgb(0,300,0)"]);
+  .range(["rgb(139,0,0)", "rgb(255,50,0)", "rgb(255,129,0)", "rgb(255,159,0)", "rgb(255,195,77)","rgb(177,221,161)","rgb(102,141,60)","rgb (50,200,0)","rgb(0,300,0)"]);
 
 var path = d3.geoPath();
 
@@ -137,10 +142,6 @@ var legend = svg.selectAll("g.legend")
 .attr ("id", "legendid");
 
 var ls_w = 20, ls_h = 20;
-
-var legend_color = d3.scaleThreshold()
-  .domain(ext_color_domain)
-  .range(["rgb(300,0,0)", "rgb(255,43,0)", "rgb(255,129,0)", "rgb(255,159,0)", "rgb(255,195,77)","rgb(177,221,161)","rgb(102,141,60)","rgb (50,200,0)","rgb(30,270,0)"]);
 
 
 legend.append("rect")
