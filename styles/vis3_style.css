@@ -1,9 +1,3 @@
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-left:40px;
-  font-weight: 200;
-  font-size: 14px;
-}
 html,body {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -15,9 +9,7 @@ html,body {
 text {
   cursor: default;
 }
-h1 {
-  font-weight: 400;
-}
+
 #chart {
   height: 506px;
 }
@@ -34,13 +26,15 @@ text {
 }
 .label {
   fill: #777;
+  font-size: 12px;
 }
 .year.label {
-  font: 500 196px "Helvetica Neue";
+  font: 500 180px "Helvetica Neue";
   fill: #ddd;
+  opacity: .5;
 }
 .country.label  {
-  font: 500 96px "Helvetica Neue";
+  font: 500 80px "Helvetica Neue";
   fill: #ddd;
 }
 .year.label.active {
