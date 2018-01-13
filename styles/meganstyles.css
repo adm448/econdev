@@ -65,6 +65,23 @@ hr {
     padding: 0;
 }
 
+.chart-title
+{
+  color: rgb(128,128,128);
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.chart-instructions
+{
+  font-size: 12px;
+  color: rgb(128,128,128);
+}
+
+.data-links
+{
+  font-size: 11px;
+  margin-right: 30px;
+}
 
 /* NAVIGATION BAR  */
 

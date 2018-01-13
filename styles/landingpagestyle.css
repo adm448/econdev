@@ -6,7 +6,7 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 130% 25%;
-
+  border: 2px solid rgb(211,211,211);
 }
 
 html {
@@ -20,7 +20,6 @@ body {
   margin: 50px auto;
   background-color: white;
   padding: 0 50px 50px 20px;
-  border: 2px solid rgb(211,211,211);
 }
 
 h1 {
@@ -29,7 +28,7 @@ h1 {
   text-align: center;
   font-family: "Lato"; 
   margin: 30px 0px 0px 0px; 
-  padding: 0px 0px 0px 0px; ;
+  padding: 0px 0px 0px 0px; 
 }
 
 h2 {
@@ -46,7 +45,8 @@ h3 {
   font-size: 20px;
   font-family: "Lato";
   margin: 10px 0px 0px 0px; 
-  padding: 0px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px;
+
 }
 
 /* NAVIGATION BAR  */
