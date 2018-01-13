@@ -192,7 +192,8 @@ function clear_demo() {
 }
 function play_demo() {
   var ex_nations = ["China", "India", "Indonesia", "Italy", "France", "Spain", "Germany", "United States","Uzbekistan","Bhutan",
-  "Swaziland","New Zealand","Turkmenistan","Korea, Rep.","Seychelles","Equatorial Guinea","Burundi"]
+  "Swaziland","New Zealand","Turkmenistan","Korea, Rep.","Seychelles","Equatorial Guinea","Burundi","Angola","Thailand","Kyrgyz Republic",
+  "Nicaragua","Yemen, Rep.","Vietnam","Moldova","Bangladesh"]
   var index_random_nation = null;
   var random_index = Math.floor(Math.random() * ex_nations.length);
   var random_nation = nations.filter(function(d, i) { 
