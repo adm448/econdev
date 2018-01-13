@@ -6,12 +6,12 @@ function color(d) { return d.region; }
 function key(d) { return d.name; }
 // Chart dimensions.
 var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 39.5},
-    width = 960 - margin.right,
+    width = 760 - margin.right,
     height = 500 - margin.top - margin.bottom;
 // Various scales. These domains make assumptions of data, naturally.
 var xScale = d3.scale.log().domain([100, 1e5]).range([0, width]),
     yScale = d3.scale.linear().domain([-30, 100]).range([height, 0]),
-    radiusScale = d3.scale.sqrt().domain([0, 5e8]).range([0, 30]),
+    radiusScale = d3.scale.sqrt().domain([0, 5e8]).range([5, 40]),
     colorScale = d3.scale.ordinal().range(["#ff4444", "#ffbb33", "#00C851", "#33b5e5", "#0d47a1", "#aa66cc"]);
 
 // The x & y axes.
@@ -39,7 +39,7 @@ svg.append("text")
     .attr("text-anchor", "end")
     .attr("x", width)
     .attr("y", height - 6)
-    .text("income per capita, constant 2010 dollars");
+    .text("log of income per capita, constant 2010 dollars");
 // Add a y-axis label.
 svg.append("text")
     .attr("class", "y label")
@@ -48,6 +48,7 @@ svg.append("text")
     .attr("dy", ".75em")
     .attr("transform", "rotate(-90)")
     .text("percent of individuals accessing the internet");
+
 // Add the year label; the value is set on transition.
 var label = svg.append("text")
     .attr("class", "year label")
@@ -91,7 +92,7 @@ d3.json("data/converted_internet_gdp.json", function(nations) {
           dragit.trajectory.display(d, i)
           dragit.utils.animateTrajectory(dragit.trajectory.display(d, i), dragit.time.current, 1000)
           countrylabel.text(d.name);
-          dot.style("opacity", .4)
+          dot.style("opacity", .1)
           d3.select(this).style("opacity", 1)
           d3.selectAll(".selected").style("opacity", 1)
         }
@@ -190,7 +191,8 @@ function clear_demo() {
   }
 }
 function play_demo() {
-  var ex_nations = ["China", "India", "Indonesia", "Italy", "France", "Spain", "Germany", "United States","Uzbekistan"]
+  var ex_nations = ["China", "India", "Indonesia", "Italy", "France", "Spain", "Germany", "United States","Uzbekistan","Bhutan",
+  "Swaziland","New Zealand","Turkmenistan","Korea, Rep.","Seychelles","Equatorial Guinea","Burundi"]
   var index_random_nation = null;
   var random_index = Math.floor(Math.random() * ex_nations.length);
   var random_nation = nations.filter(function(d, i) { 
@@ -204,7 +206,7 @@ function play_demo() {
   dragit.trajectory.display(random_nation, index_random_nation);
   countrylabel.text(random_nation.name);
   dragit.utils.animateTrajectory(dragit.lineTrajectory, dragit.time.min, 2000)
-  d3.selectAll(".dot").style("opacity", .4)
+  d3.selectAll(".dot").style("opacity", .1)
   d3.selectAll(".dot").filter(function(d) {
     return d.name == random_nation.name;
   }).style("opacity", 1)

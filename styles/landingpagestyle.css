@@ -53,6 +53,7 @@ div.scrollmenu {
     font-family: "Lato"; 
     font-size: 15px; 
     white-space: nowrap;
+    opacity: .9;
 }
 
 div.scrollmenu a {

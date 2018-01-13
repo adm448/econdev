@@ -1,0 +1,112 @@
+/* BASIC LAYOUT */
+
+html {
+  font-size: 18px; 
+  font-family: "Lato";
+  color: black;
+}
+
+body {
+  width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 0 50px 50px 20px;
+  border: 2px solid rgb(211,211,211);
+}
+
+h1 {
+  color: #2f4f4f;
+  font-size: 35px; 
+  text-align: center;
+  font-family: "Lato"; 
+  margin: 30px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; ;
+}
+
+h2 {
+  color: #4d8080;
+  font-size: 20px;
+  text-align: center; 
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h3 {
+  color: #609f9f;
+  font-size: 20px;
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h4 {
+  color: rgb(128,128,128);
+  font-size: 15px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h5 {
+  color: rgb(128,128,128);
+  font-size: 13px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(232,232,232);
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* NAVIGATION BAR  */
+
+div.scrollmenu {
+    position: fixed;
+    top: 0%; 
+    left: 0; 
+    width: 100em; 
+    background-color: #333;
+    overflow: auto;
+    font-family: "Lato"; 
+    font-size: 15px; 
+    white-space: nowrap;
+    opacity: .9;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+/* LEGEND */
+/* basic positioning */
+.legend { list-style-type: none; font-size: 11px;}
+.legend li { float: left; margin-right: 10px; }
+.legend span { border: 0px solid #ccc; float: left; width: 12px; height: 10px; margin: 2px; list-style-type: circle}
+/* colors */
+.legend .americas { background-color: #33b5e5; }
+.legend .europe-and-central-asia { background-color: #ff4444; }
+.legend .middle-east-and-north-africa { background-color: #ffbb33; }
+.legend .sub-saharan-africa { background-color: #00C851; }
+.legend .south-asia { background-color: #aa66cc; }
+.legend .east-asia-and-the-pacific { background-color: #0d47a1;}
+
+/* legend text */
+.legend-text { list-style-type: none; font-size: 11px;}
+.legend li { float: left; margin-right: 10px; }
+
