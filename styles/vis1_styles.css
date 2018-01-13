@@ -1,26 +1,68 @@
-html {
-	background-color: blue;
-}
+/* BASIC LAYOUT */
 
-p {
-	color: black;
-	text-align: center;
+html {
+  font-size: 18px; 
+  font-family: "Lato";
+  color: black;
 }
 
 body {
-	background-color: white;
-	width: 800px;
-	margin: 50px auto;
-	border: 2px solid rgb(211,211,211);
-	padding: 0px 50px 50px 20px;
+  width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 0 50px 50px 20px;
+  border: 2px solid rgb(211,211,211);
 }
 
 h1 {
-	font-size: 60px;
-	text-align: center;
-	margin: 0;
-	padding: 20px 0;
-	color: black;
+  color: #2f4f4f;
+  font-size: 35px; 
+  text-align: center;
+  font-family: "Lato"; 
+  margin: 30px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; ;
+}
+
+h2 {
+  color: #4d8080;
+  font-size: 20px;
+  text-align: center; 
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h3 {
+  color: #609f9f;
+  font-size: 20px;
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h4 {
+  color: rgb(128,128,128);
+  font-size: 15px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h5 {
+  color: rgb(128,128,128);
+  font-size: 13px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(232,232,232);
+    margin: 1em 0;
+    padding: 0;
 }
 
 #sources {
@@ -31,6 +73,7 @@ h1 {
 
 div.scrollmenu {
     position: fixed;
+    text-align: center;
     top: 0%; 
     left: 0; 
     width: 100em; 
