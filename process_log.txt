@@ -1,0 +1,103 @@
+Group A1 Process Log
+
+Note: Our Github repository does not contain many comments, as the vast majority of our meetings were held in person. We also worked together in person, so problem-solving took place live rather than over the web. The notes below document the output and blockers discussed at each meeting.
+
+1/5/2018, 6:00pm
+Scrum meeting took place in person after class
+Tasks assigned for next scrum meeting:
+Create homepage for group (Adam)
+Create individual pages for each visualization that link to the home page (all)
+Blockers:
+None
+
+
+1/7/2018, 5:00pm
+Scrum meeting took place over the phone
+Tasks assigned for the next scrum meeting:
+Update page link and address merge conflicts (Corinna)
+Problem-solved this live over the phone
+Finalize choice for visualization and dataset (all)
+Blockers:
+Still a little fuzzy on the concepts of branching in a collaborative environment (specifically on keeping all interdependent files up to date)
+Learning best practices for deleting branches (i.e., when should we do this? How do we deal with a branch we don’t want to merge into the master?)
+Learning how to manipulate the code on the data visualizations we’ve found
+
+
+1/9/2018, 12:00pm
+Scrum meeting took place in person
+Tasks assigned for the next scrum meeting:
+Upload template of the visualization we want to create to the website (with sample data) (all)
+Blockers:
+D3 and JS knowledge gap - running into trouble getting visualization to appear on website (seems to be due to a file path problem)
+
+
+1/10/2018, 8:30 am
+Scrum meeting took place in person immediately before class
+Tasks assigned for next scrum meeting:
+Clean and convert data into proper format to be uploaded to D3 visualization (all)
+Blockers:
+Two members considering very similar visualizations. How to make different?
+Knowledge gap in data structuring
+Don't know what to look for in D3 code to resolve bugs
+
+
+1/11/2018, 12:00pm
+Scrum meeting took place in person, followed by a multi-hour working meeting
+Tasks assigned for next scrum meeting:
+Add our own data to the visualization templates on the website (all)
+Finish re-formatting JSON file (Megan)
+Customize visualizations and text (all)
+Blockers:
+Trouble converting CSV data into properly-formatted JSON file (structure requires one list whose elements are all dictionaries, and each dictionary contains lists)
+Trouble customizing visualization without breaking it
+
+
+1/12/2018, 1:30pm
+Scrum meeting took place in person immediately following class
+Tasks assigned for next scrum meeting:
+Finish adding customizations to visualization (all)
+Add more advanced features / nice-to-haves (all)
+Organize process notes for process artifact (Megan)
+Draft CSS stylesheet to be used on all pages (Corinna)
+Draft burn-down chart (Adam)
+Blockers:
+Issues formatting D3 visualizations to style specifications 
+
+
+1/13/2018, 1:00pm
+Scrum meeting took place in person 
+Tasks assigned for finalized product:
+Finalize website style guide
+Finalize website text
+Confirm website meets all specifications for project
+Organize GitHub (including adding all data and scrum log files)
+Create readmes for all files
+Blockers
+Customizing legend in CSS (Adam)
+CSS stylesheet not loading on page (Adam)
+
+
+Retrospective - team 
+Continue doing: in person meetings and working sessions were productive and helpful
+Start doing: make more explicit, deliberate use of Trello as a tool for tracking progress; update it more frequently. 
+Stop doing / areas for improvement: Stop diving into detailed problem-solving without first completing the scrum process
+
+
+Retrospective - Megan
+Continue doing: In-person meetings that were held at a regular pace, but with enough time in between to complete the previously assigned tasks (we agreed to do this after the first meeting)
+Start doing: More consistency in updating Trello board / making use of it as a tool to keep track of what teammates are working on
+Stop doing:  Holding unstructured meetings - complete the scrum updates before beginning problem solving to ensure that all updates and issues have been surfaced
+
+
+Retrospective - Corinna
+Continue doing: our in person meetings and working sessions - those were very helpful and productive!
+Start doing: 
+Refer back to and update the Trello more frequently to reflect our improving understanding of our tasks and challenges, as well as to reflect decisions made in the scrum meetings/working sessions. This could have helped us with having a very neat overview of the project at all times. 
+For me personally: ask for help from my team mates/ the class / the teaching team earlier. I found myself wrestling for hours with a minor issue that took Ishaan literally one minute to resolve - so if I had to do it again, for the benefit of my output product and my learning experience I would ask questions earlier.
+Stop doing / areas for improvement: maybe we could have been better at explaining to each other in more detail during our scrum meetings what we are doing, where we are in the process and what our blockers are. We were a small group so would have had enough time to go into a greater level of detail, which I think would have helped us help each other in a more targeted way. 
+
+
+Retrospective - Adam 
+Continue doing:  The in-person team meetings worked the best, but when we weren’t all able to get together, I felt we collaborated well via slack and github (e.g., resolving a merge conflict).
+Start doing:  More closely adhere to the scrum structure by starting each meeting with accomplishments, goals, and blockers.  Also use that time to really talk through how each group member’s page/visualization contributed to the overall project.
+Stop doing:  Merging our own commits into the master.  This wasn’t a big deal, since we were mostly working on our own pages, but I think going forward (or if this were a larger project) it’d be good to get in the habit of having a teammate or the product owner review the changes.
