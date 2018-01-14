@@ -18,7 +18,7 @@ In doing my analysis, it became clear that my indicator of fixed broadband subsc
 VISUALIZATION
 -------------
 
-In terms of edits to the visualization, I went from a multihue color spectrum to a single hue (blue).  I also changed the label titles to reflect my data set.
+In terms of edits to the visualization, I went from a multihue color spectrum to a single hue (blue).  I also changed the label titles to reflect my data set.  It doesn't sound like a lot, but I went through multiple iterations.  Our team also spent a good deal of time tweaking our styles to get a consistent feel across all the pages.
 
 On a next iteration, I would like to try to adjust the legend labels so that they are consistent for both time frames.  That would make comparison across years easier. I would also like to add a title (e.g., the year of the dataset) to the leged to clarify which time series one is looking at.
 
