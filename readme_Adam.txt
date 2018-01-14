@@ -23,3 +23,9 @@ In terms of edits to the visualization, I went from a multihue color spectrum to
 On a next iteration, I would like to try to adjust the legend labels so that they are consistent for both time frames.  That would make comparison across years easier. I would also like to add a title (e.g., the year of the dataset) to the leged to clarify which time series one is looking at.
 
 With lots of practice, I would like to try to include a time slider in the visualization to show how the indicator has changed over time.
+
+---------
+BRANCHING
+---------
+
+I created a number of branches to develop different parts of my project page.  I deleted several of them after the project to clean-up the github repo.  I'm not sure if this affects the "network view" at all.
