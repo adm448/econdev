@@ -15,18 +15,22 @@
   <a href="Gender_Gap.html">Gender Gap in Access</a>
   <a href="GDP_Access.html">GDP and Access</a>
 </div>
+
 <h1> Internet Access Worldwide </h1>
+<h2> Adam Murray </h2>
+<br>
 
-<p> We'll examine data from <b>The International Telecommunications Union</b> on fixed broadband subscriptions for nearly all countries from 2000-2016.</p>
+<h3 class="chart-title">Getting Online: How the World is Starting to Connect</h3>
+<h4> The two maps below show the spread of internet access (fixed broadband subscriptions per 100 habitants) from 2006 to 2016.  While much of the world has come online, large gaps in fixed broadband subscriptions persist. </h4>
+<p class="chart-instructions"><i>Note that the buckets in the legend scale are not equivalent, so the color intenstiy is not a direct match from 2006 to 2016.</i></p>
 
-<p> In terms of data visualization, a map would great to show internet penetration rates around the world, although showing change over time will be more advanced.  I need to explore other visualizations for comparing two variables in a geographic context. </p>
-
-<h2> Not Connected: Global South Still Lags Behind </h2>
-<h4> Since 2006, much of the world has come online, but large gaps in fixed broadband subscriptions persist. </h4>
-
+<h4>2016 </h4>
 <div id="map"></div>
+<h4>2006 </h4>
 <div id="map2006"></div>
 <p id="sources"> Data: <a href="https://www.itu.int/en/ITU-D/Statistics/Documents/statistics/2017/Fixed_broadband_2000-2016.xls">ITU Fixed Broadband Subscriptions</a>  Visualization: <a href="https://d3-geomap.github.io/map/choropleth/world/">Choropleth Map World</a></p>
+
+<p> OECD countries were clearly some of the earliest to widely install broadband in their countries. A decade later, large parts of South America, Asia, Eurasia, and the Middle East had connected. While countries like China and Russia had similar access levels in 2016 as the United States had in 2006, others still lag behind.  Given the strength of the IT sector in India, it is surprising that broadband subscriptions per 100 habitants match levels found in Africa. On the continent, we see significant growth in access (though from a low base), especially in the south of Africa. There are large disparities in ASEAN countries as well. While rates in many developing countries are quite low, our analysis does not account for mobile broadband subscriptions, which have proven quite popular in many developing countries that lack fixed infrastructure.  </p>
 
 <script src="scripts/d3.geomap.dependencies.min.js"></script>
 <script src="scripts/d3.geomap.min.js"></script>

@@ -78,11 +78,21 @@ hr {
   color: rgb(128,128,128);
 }
 
-.data-links
-{
-  font-size: 11px;
-  margin-right: 10x;
-}
+
+.data-links { list-style-type: none; font-size: 11px;}
+.data-links li { float: left; margin-left: -40px; margin-right:50px;}
+
+.button {
+    background-color: #4285F4; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px grey;
+  }
 
 /* NAVIGATION BAR  */
 
@@ -115,7 +125,7 @@ div.scrollmenu a:hover {
 /* basic positioning */
 .legend { list-style-type: none; font-size: 11px;}
 .legend li { float: left; margin-right: 10px; }
-.legend span { border: 0px solid #ccc; float: left; width: 12px; height: 10px; margin: 2px; list-style-type: circle}
+.legend span { border: 0px solid #ccc; float: left; width: 12px; height: 10px; margin: 2px; }
 /* colors */
 .legend .americas { background-color: #33b5e5; }
 .legend .europe-and-central-asia { background-color: #ff4444; }
