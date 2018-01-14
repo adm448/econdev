@@ -26,7 +26,7 @@ h1 {
 
 h2 {
   color: #4d8080;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center; 
   font-family: "Lato";
   margin: 10px 0px 0px 0px; 
@@ -42,17 +42,18 @@ h3 {
 }
 
 h4 {
-  color: rgb(128,128,128);
+  color: rgb(112,112,112);
   font-size: 16px;
-  font-family: "Lato:100";
+  font-family: "avenir next", Arial, sans-serif;
   margin: 10px 0px 0px 0px; 
   padding: 0px 0px 0px 0px; 
+  
 }
 
 h5 {
-  color: rgb(128,128,128);
+  color: rgb(112,112,112);
   font-size: 13px;
-  font-family: "Lato:100";
+  font-family: "avenir next", Arial, sans-serif;
   margin: 10px 0px 0px 0px; 
   padding: 0px 0px 0px 0px; 
 }
@@ -62,7 +63,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid rgb(232,232,232);
-    margin: 1em 0;
+    margin: 1em 0em;
     padding: 0;
 }
 
@@ -95,14 +96,13 @@ div.scrollmenu a:hover {
 }
 
 
-/* D3 MAP SECTION 
+/* D3 MAP */ 
 
-Add D3 map */
+/* Add D3 map */
 
 #gender-divide-map {
   font-size: 10px;
   font-family:"avenir next", Arial, sans-serif;
-  color: rgb(0,0,300);
 }
 
 #gender-divide-map .names {
@@ -113,9 +113,9 @@ Add D3 map */
 
     /* Tooltip CSS */
     .d3-tip {
+    font-size: 12px;
     line-height: 1.5;
-    font-weight: 400;
-    font-family:"avenir next", Arial, sans-serif;
+    font-family:"avenir next";
     padding: 6px;
     background: rgba(0, 0, 0, 0.6);
     color: #FFA500;
@@ -182,11 +182,17 @@ Add D3 map */
       color:white;
     }
 
-/* Add legend (different source to main graph)*/ 
+/* Add legend and datasources (different source to main graph)*/ 
 
-#legendid .legend {
-  font-size: 10px;
+.legendtext {
+  font-size: 11px;
   font-family:"avenir next", Arial, sans-serif;
-  color: rgb(0,0,250);
+  fill: rgb(112,112,112);
    
    }
+
+.datasources {
+  font-size:12px;
+  font-family:"avenir next", Arial, sans-serif;
+  color: rgb(112,112,112);
+}

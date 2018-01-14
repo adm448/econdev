@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+
 <html>
+
 
 <head>
     <title>Female Internet Access Gap</title>
     <link href="styles/Corinna/Corinnastyles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-
 </head>
+
+
 
 <body>
 
@@ -18,51 +21,55 @@
   <a href="GDP_Access.html">GDP and Access</a>
 </div>
 
+<h1>#menot: Female Internet Access </h1>
 
+<h2>Corinna Fehst</h2>
+<br><br>
 
-<h1>Female Internet access across the world: #menot </h1>
-<h2>Corinna Fehst<h2>
-
-<br>
 <h3> Motivation</h3>
-<br>
-<p>Like in so many other areas of life, women do not yet have equal rights to men when it comes to Internet access. Today, <b>women in many countries of the world still face disadvantages in Internet Access compared to their male fellow citizens </b> - sometimes to a significant degree. <br> <br> The interactive map below visualizes this <b>Female Internet Access Gap. </b> It seeks to create transparency and to thereby motivate change.</p>
+
+<p>Today, <b>women in many countries of the world still face disadvantages in Internet Access compared to their male fellow citizens </b> - sometimes to a significant degree. The interactive map below visualizes this <b>Female Internet Access Gap, </b> and seeks to raise awareness on the issue.</p>
 <br>
 
-<h3> The Female Internet Access Gap - Methodology </h3> <br>
-<p>For each country where reliable data is available, the map below displays the percentage point (% pt) difference between male and female Internet access rates, along with the total male and female Internet access rate for the given country. </p>
+<h3> Methodology </h3>
+<p>For each country where data is available, the map below displays the percentage point (% pt) difference between male and female Internet access rates, along with the total male and female Internet access rate for the given country. </p>
 
 <p>As such, there are two main outcomes for a country: 
 <ul>
 	<li><b>Female Internet Access Gap </b>: Countries where women have lower Internet access than men are coloured in a shade of red or orange, depending on the size of the gap</li> <br>
-	<li><b>No Female Internet Access Gap</b> Countries where women have equal or higher Internet access than men are highlighted in shades of green, depending on how much larger female access is.</ul><br>
+	<li><b>No Female Internet Access Gap</b> Countries where women have equal or higher Internet access than men are highlighted in shades of green, depending on how much larger female access is.</ul></p>
 
-<b>Example</b>: if female Internet penetration in Country X is 50% (meaning 50% of women in Country X have access to the Internet) and male Internet penetration is 60%, then the Female Internet Access Gap is -10 % pts, and Country X will be colored in light red.<p>
+<p>For Example if female Internet penetration in Country X is 50% (meaning 50% of women in Country X have access to the Internet) and male Internet penetration is 60%, then the Female Internet Access Gap is -10 % pts, and Country X will be colored in light red.</p>
 
-<br><br>
+<br>
 
 <hr>
-<h4>#menot: women with lower Internet Access than men in vast majority of countries<h4>
-<h5>Significant gaps in female vs. male Internet Access in particular in Africa <h5>
+<h4>#menot: women with lower Internet Access than men in vast majority of countries</h4>
+<h5>Significant gaps in female vs. male Internet Access in particular in Africa </h5>
+
 
 <div id="gender-divide-map"></div>
-<div id="legendid"></div>
+<br>
+
+
+<p class="datasources">
+  <b>Data sources: </b>mostly based on the latest available UN International Telecommunications Union <a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">Internet Access by Gender Statistics (2015/16)</a>. 
+
+  Where ITU data was not available, other sources were consulted: 
+  <a href="https://cnnic.com.cn/IDR/ReportDownloads/201706/P020170608523740585924.pdf">China Internet Network Information Center </a>(official Chinese agency for Internet statistics); 
+  <a href="http://www.pewglobal.org/2016/02/22/Internet-access-growing-worldwide-but-remains-higher-in-advanced-economies/">Pew Research Center</a> for South Africa, Vietnam, Uganda, Tanzania, Senegal, Nigeria, Kenya, India, Ghana, Ethiopia, Burkina Faso; 
+  <a href="https://www.indec.gov.ar/nivel4_default.asp?id_tema_1=4&id_tema_2=26&id_tema_3=71]">Instituto Nacional de Estadistica y Censos</a> for Argentina; and 
+  <a href="https://www.statista.com/statistics/418210/gender-distribution-of-Internet-users-in-canada/">Statista </a>for Canada.</p> 
+
+<p class="datasources"><b>D3 Visualization Sources: </b> <a href="http://bl.ocks.org/micahstubbs/8e15870eb432a21f0bc4d3d527b2d14f">D3 World Map</a> and <a href="http://bl.ocks.org/KoGor/5685876">D3 Data Legend"</a></p>
+
+<br><br>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/queue.v1.min.js"></script>
 <script src ="https://d3js.org/topojson.v1.min.js"></script>
 <script src="data/Corinna/d3-tip.js"></script>
 <script src="scripts/Corinna/Corinnamain.js"></script>
-
-<br><br>
-
-
-
-<h5>Data: mostly based on the latest available UN International Telecommunications Union <a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">Internet Access by Gender Statistics (2015/16)</a>. Where ITU data was not available, other sources were consulted – specifically: <a href="https://cnnic.com.cn/IDR/ReportDownloads/201706/P020170608523740585924.pdf">China Internet Network Information Center </a>(official Chinese agency for Internet statistics); <a href="http://www.pewglobal.org/2016/02/22/Internet-access-growing-worldwide-but-remains-higher-in-advanced-economies/">Pew Research Center</a> for South Africa, Vietnam, Uganda, Tanzania, Senegal, Nigeria, Kenya, India, Ghana, Ethiopia, Burkina Faso; <a href="https://www.indec.gov.ar/nivel4_default.asp?id_tema_1=4&id_tema_2=26&id_tema_3=71]">Instituto Nacional de Estadistica y Censos</a> for Argentina; and <a href="https://www.statista.com/statistics/418210/gender-distribution-of-Internet-users-in-canada/">Statista </a>for Canada.<h5> 
-
-<h5>D3 Sources: <a href="http://bl.ocks.org/micahstubbs/8e15870eb432a21f0bc4d3d527b2d14f">D3 World Map</a> and <a href="http://bl.ocks.org/KoGor/5685876">D3 Data Legend"</a>
-
-<br><br>
 
 </body>
 </html>
