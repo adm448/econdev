@@ -1,0 +1,25 @@
+----
+DATA
+----
+
+The original data for this visualization comes from the ITU in an excel format.
+https://www.itu.int/en/ITU-D/Statistics/Documents/statistics/2017/Fixed_broadband_2000-2016.xls
+
+I cleaned up the data in excel to focus on just the indicator I wanted -- namely, fixed broadband subscriptions per 100 habitants.
+I also added UN country codes for all countries.  I did this manually.
+Then I simply saved the file in .csv format as:
+econdev/data/Fixed_broadband_200-2016_with_country_codes.csv
+
+The script for the visualizations (vis1_global_internet_subscriptions.js) calls a csv format and all you have to do is select the value (e.g. year) in the column function.
+
+In doing my analysis, it became clear that my indicator of fixed broadband subscriptions probably does not capture the increase in internet access via mobile connections in many developing countries.  On a future iteration, it may be advisable to merge the two data sets or compare them side-by-side.
+
+-------------
+VISUALIZATION
+-------------
+
+In terms of edits to the visualization, I went from a multihue color spectrum to a single hue (blue).  I also changed the label titles to reflect my data set.
+
+On a next iteration, I would like to try to adjust the legend labels so that they are consistent for both time frames.  That would make comparison across years easier. I would also like to add a title (e.g., the year of the dataset) to the leged to clarify which time series one is looking at.
+
+With lots of practice, I would like to try to include a time slider in the visualization to show how the indicator has changed over time.
