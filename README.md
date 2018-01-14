@@ -4,7 +4,8 @@ Class project (A1)
 Welcome to our visualization project! To see the final product, please visit https://adm448.github.io/econdev/
 
 The main html files on our website are located in the top folder, along with a README for each visualization describing the process 
-of building it and our favicon image.
+of building it and our favicon image. Additionally, we have included a process log with notes from each of our scrum meetings and a 
+few retrospective thoughts on our last sprint.
 
 In the scripts folder, you will find the scripts used to implement each D3 visualization.
 
